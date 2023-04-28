@@ -1,4 +1,4 @@
-# Aggrigate methods
+# Aggregate methods
 
 ## Learning Goals
 
