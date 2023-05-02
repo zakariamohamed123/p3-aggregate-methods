@@ -1,8 +1,8 @@
-# Aggregate methods mini lesson
+# Mini lesson: Aggregate methods
 
 ## Learning Goals
 
-- Write aggregate methods.
+- Write aggregate methods to collect data about objects using their related objects.
 
 ***
 
