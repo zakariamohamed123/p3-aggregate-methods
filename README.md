@@ -1,4 +1,4 @@
-# Aggregate methods
+# Aggregate methods mini lesson
 
 ## Learning Goals
 
@@ -29,7 +29,17 @@ In this lesson we will use the example of `Student`, `Enrollment`, and `Course` 
 
 ## Aggregate methods
 
-Lets saw we wanted to add an aggregate method to the `Enrollment` class to figure out how many enrollments were done for any day students were enrolled. Lets make this method a class method.
+Lets try an easy example of an aggregate method that counts the number of courses a `Student` is a part of. For this method all we need to do is
+look at the count of all the enrollments in the `Student` object.
+
+```py
+def course_count(self):
+    return len(self._enrollments)
+```
+
+Now lets try a more complex example.
+
+Lets say we wanted to add an aggregate method to the `Enrollment` class to figure out how many enrollments were done for any day students were enrolled. Lets make this method a class method.
 
 ```py
 @classmethod
@@ -56,12 +66,12 @@ enrollment and the value is the grade. Lets write a method that would give us th
       return average_grade
 ```
 
-Since in this example we don't care about the course and only the grade lets get the values from the `grades`
+Since in this example we don't care about the course and only the grades lets get the values from the `grades`
 dictionary using `self._grades.values()`. We can now sum the grades and divide it by the number of the courses we have which will end up being the average of the students grades across all the enrollments.
 
 ## Conclusion
 
-In conclusion, aggregate methods are tools that can help you process data in many-to-many relationships. These methods allow you to compute various aggregate values that can provide insights into the relationships between different entities, such as the number of courses a student is enrolled in, the number of students in a course, or the average grade of a student. They can help you identify trends, patterns, and relationships between different entities.
+ Aggregate methods are tools that can help you process data in many-to-many relationships. These methods allow you to compute various aggregate values that can provide insights into the relationships between different entities, such as the number of courses a student is enrolled in, the number of students in a course, or the average grade of a student. They can help you identify trends, patterns, and relationships between different entities.
 
 ***
 
