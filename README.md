@@ -43,9 +43,9 @@ Lets say we wanted to add an aggregate method to the `Enrollment` class to figur
 
 ```py
 @classmethod
-def aggregate_enrollments_per_day(cls, enrollments):
+def aggregate_enrollments_per_day(cls):
     enrollment_count = {}
-    for enrollment in enrollments:
+    for enrollment in cls.all:
         date = enrollment.get_enrollment_date().date()
         enrollment_count[date] = enrollment_count.get(date, 0) + 1
     return enrollment_count
