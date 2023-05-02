@@ -1,4 +1,4 @@
-# Mini lesson: Aggregate methods
+# Mini Lesson: Aggregate Methods
 
 ## Learning Goals
 
